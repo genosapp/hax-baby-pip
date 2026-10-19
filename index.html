@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pip — Junior Dream Engineer | Midnight Nursery Portfolio</title>
+<meta name="description" content="Pip's cozy portfolio — Junior Dream Engineer at the Midnight Nursery. Lullabies, nightlights, and bedtime dreams.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sparkle-canvas"></canvas>
+
+<header class="top">
+  <div class="logo">🌙 Pip</div>
+  <div class="controls">
+    <button class="pill" id="mode-toggle">🌙 Night</button>
+    <button class="pill" id="mute-toggle">🔊 Sound</button>
+  </div>
+</header>
+
+<!-- Scene 1: WHO -->
+<section id="who" class="scene">
+  <img src="assets/pip_avatar_cloud.png" alt="Pip waving on a cloud" class="hero-char" id="pip-hero">
+  <h1>Hi, I'm Pip.</h1>
+  <p class="tagline">"I build the dreams you fall asleep inside."</p>
+  <div class="badge">Junior Dream Engineer · Midnight Nursery</div>
+  <p class="copy">I'm a little skull-faced baby with big glowy eye sockets, a crooked smile, and a star-covered
+  nightcap with a tiny pink bow. I'm curious, a bit clumsy, and I giggle at absolutely everything —
+  especially silence, which I'm not a fan of. Move your mouse (or finger) near me, I'll watch you.</p>
+</section>
+
+<!-- Scene 2: WHAT -->
+<section id="what" class="scene">
+  <h1>What I Make</h1>
+  <p class="copy">Every night I build the tiny machines that keep the neighbourhood's ghosts and
+  creatures sleeping soundly. Here's what's on my workbench this week:</p>
+  <div class="projects">
+    <div class="card" id="card-lullaby">
+      <img src="assets/pip_lullaby_box.png" alt="The Lullaby Lab music box">
+      <h3>🎵 The Lullaby Lab</h3>
+      <p>A pastel music box I wind up every night. Click it — it actually sings.</p>
+    </div>
+    <div class="card" id="card-nightlight">
+      <img src="assets/pip_dream_lantern.png" alt="Dream nightlight lantern">
+      <h3>🏮 Nightlight Collection</h3>
+      <p>Glowing crescent-moon lanterns for bedrooms that are scared of the dark.</p>
+    </div>
+    <div class="card" id="card-rattle">
+      <div class="rattle" id="rattle-toy">🧸</div>
+      <h3>🧷 Rattle & Block Toy</h3>
+      <p>Tap it. Go on. It rattles. I invented this between naps.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Scene 3: STORY -->
+<section id="story" class="scene">
+  <img src="assets/pip_portrait.png" alt="Pip studio portrait holding the dream lantern" class="hero-char">
+  <h1>My Story</h1>
+  <p class="copy">I was found fast asleep inside a hatching dream-egg at the top of the Midnight Nursery
+  clocktower. Nobody knows exactly how long I'd been dreaming, only that when I woke up I already knew
+  how lullabies worked. The head Dream Engineers gave me a nightcap, a toolkit, and a very important job:
+  make sure nobody in the neighbourhood goes to sleep scared. I'm still learning, still a little clumsy,
+  but every lantern I light means one less kid afraid of the dark.</p>
+  <div class="odometer" id="odometer">Dreams delivered: 000000</div>
+</section>
+
+<!-- Guestbook -->
+<section id="guestbook" class="scene">
+  <h1>Leave Pip a Dream Wish 💌</h1>
+  <p class="copy">Tell Pip what you'd like to dream about tonight. It stays on this wall for every visitor to see.</p>
+  <form class="guestbook" id="wish-form">
+    <input type="text" id="wish-name" placeholder="Your name" maxlength="24" required>
+    <textarea id="wish-text" placeholder="Your dream wish..." maxlength="140" rows="3" required></textarea>
+    <button type="submit" class="pill">Send to the Nursery 🌙</button>
+  </form>
+  <div class="wishes" id="wishes-list"></div>
+</section>
+
+<div id="egg-pop">
+  <div class="box">
+    <img src="assets/pip_avatar_cloud.png" alt="Pip waking up">
+    <p id="egg-text">*yawn* ...hi! You found me. Shh, don't tell the other ghosts I was napping.</p>
+    <button class="pill" onclick="document.getElementById('egg-pop').style.display='none'">Okay, back to sleep 🌙</button>
+  </div>
+</div>
+
+<div class="easter-hint">psst... try clicking Pip's nightcap ⭐</div>
+
+<footer>
+  Built for haX.baby · Baby's First Website Challenge (Track 1 — Pip, canon by hax.baby) ·
+  Art: official Pip Creator Asset Pack (hax.baby) · Fonts: Google Fonts "Baloo 2" ·
+  Code &amp; sound design: GenOS Team · Built 17–19 Oct 2026.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
